@@ -4,7 +4,6 @@ import java.io.FileWriter;
 
 import java.io.IOException;
 import java.util.Map;
-import java.util.Set;
 
 /**
  * Managing the writing of the symptom counting text file
