@@ -1,11 +1,11 @@
-#Sample project for OpenClassroom's fundamentals of Java
+# Sample project for OpenClassroom's fundamentals of Java
 
 The program takes a list of symptoms in an input text file 'symptoms.txt' and then counts the number of identical symptoms, then saves the list of symptoms and their number in an output text file 'result.out'.
 
-##Dependencies
+## Dependencies
 This code was created and tested with Java version 22
 
-##For compile et lauch the program
+## For compile and launch the program
 
 ```bash
     javac com/hemebiotech/analytics/AnalyticsCounter.java ;
@@ -13,7 +13,7 @@ This code was created and tested with Java version 22
 
 ```
 
-##Usage class in main
+## Usage class in main
 
 ```java
         ISymptomReader reader = new ReadSymptomDataFromFile("symptoms.txt");
