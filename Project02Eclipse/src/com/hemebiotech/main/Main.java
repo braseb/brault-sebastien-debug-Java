@@ -1,7 +1,11 @@
-package com.hemebiotech.analytics;
+package com.hemebiotech.main;
 
 import java.util.List;
 import java.util.Map;
+
+import com.hemebiotech.analytics.AnalyticsCounter;
+import com.hemebiotech.reader.*;
+import com.hemebiotech.writer.*;
 
 
 public class Main {
@@ -14,7 +18,7 @@ public class Main {
         AnalyticsCounter analyCount = new AnalyticsCounter(reader, writer);
         
         List<String> symptoms = analyCount.getSymptoms();
-        
+                
         Map<String, Integer> CountSymptoms = analyCount.countSymptoms(symptoms);
         
         CountSymptoms = analyCount.sortSymptoms(CountSymptoms);

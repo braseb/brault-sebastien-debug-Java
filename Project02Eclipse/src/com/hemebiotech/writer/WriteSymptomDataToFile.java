@@ -1,4 +1,4 @@
-package com.hemebiotech.analytics;
+package com.hemebiotech.writer;
 
 import java.io.FileWriter;
 
@@ -14,7 +14,7 @@ public class WriteSymptomDataToFile implements ISymptomWriter {
      
     private String filepath;
     /**
-     * 
+     * A class for create a result file of the symptom counting
      * @param filepath a full or partial path to file with symptom strings in it, one per line
      */
     
@@ -28,12 +28,7 @@ public class WriteSymptomDataToFile implements ISymptomWriter {
             try {
                 FileWriter writer = new FileWriter (this.filepath);
                 
-                //Set<String> symptomsKey = symptoms.keySet();
-                /*for (String s : symptomsKey) {
-                    Integer numbers = symptoms.get(s);
-                    writer.write(s + ": " + numbers + "\n");
-                }*/
-                symptoms.forEach( (key, val) ->{
+                symptoms.forEach( (key, val) -> {
                                                      try {
                                                         writer.write(key + ": " + val + "\n");
                                                      } 
@@ -50,7 +45,5 @@ public class WriteSymptomDataToFile implements ISymptomWriter {
         }
         
     }
-    
-    
-    
+  
 }

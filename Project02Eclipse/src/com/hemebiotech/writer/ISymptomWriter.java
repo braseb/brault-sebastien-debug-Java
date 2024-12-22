@@ -1,4 +1,4 @@
-package com.hemebiotech.analytics;
+package com.hemebiotech.writer;
 
 import java.util.Map;
 /**
@@ -8,11 +8,12 @@ import java.util.Map;
  * 
  */
 public interface ISymptomWriter {
-    /**
-     * Write the result Map in a file,
-     * throw a exception if fail
-     * 
-     * @param symptoms, a Map list with a String key and a Integer value
-     */
+/**
+ * Write the result Map in a file,
+ * throw a exception if fail
+ * 
+ * @param symptoms, a Map list with a String key and a Integer value
+  */
+
     public void writeSymptoms(Map<String, Integer> symptoms) ;
 }
